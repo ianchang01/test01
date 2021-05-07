@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Selector測試</title>
+<style type="text/css">
+/* 標籤名稱選擇器 */
+body{
+  font-size:16px; font-family:"微軟正黑體"
+}
+h3{
+  font-size:24px; text-decoration:underline; text-decoration-style: wavy;
+}
+/* Class 選擇器 */
+div.content{
+	font-size:20px; padding:6px; border:2px dashed #888888;
+}
+/* id 選擇器 */
+#btn{
+    font-size:15px;
+    border:2px solid #888888;
+	background-color: #ffffff;padding:2px;
+}
+/* 虛擬選擇器: 搭配其他選擇器使用 */
+/* :hover 滑鼠移到目標上時，套用一組設定 */
+#btn:hover {
+    background-color: #888888;
+}
+/* :focus 當目標取得焦點時，套用一組設定 */
+input:focus{
+   border:2px solid #ff0000;
+}
+
+/* 階層式選擇器: 搭配其他選擇器使用 */
+.list01 a{
+  color:#0000ff
+}
+.list02 a{
+  color:#008800
+}
+
+
+</style>
+
+</head>
+<body>
+  <h3>CSS 上課練習</h3>
+  <div class="content">
+     大家好，我是 Ian Chang
+  </div>
+  <h3>常用連結:</h3> 
+  <ul class="list01">
+    <li><a href="https://www.google.com/">Google</a></li>
+	<li><a href="https://www.facebook.com/">Facebook</a></li>
+  </ul>
+  <h3>公司網站</h3>
+  <ul class="list02">
+    <li><a href="http://www.oitc.com.tw/">OITC</a></li>
+	<li><a href="http://oitcnas.oitc.com.tw/index.php/apps/files">ownCloud</a></li>
+  </ul>
+  <h3>聯絡方式</h3>
+  <div class="content">
+     填寫資訊 <input type="text" /> <button id="btn">送出</button>
+  </div>
+</body>
+</html>
